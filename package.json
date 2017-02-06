@@ -1,0 +1,35 @@
+{
+  "name": "layout.css",
+  "version": "1.0.0",
+  "description": "A stylesheet for layout, using flex and padding, easy and compatible!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orange727/layout.git"
+  },
+  "keywords": [
+    "stylesheet",
+    "layout",
+    "flex",
+    "compatible"
+  ],
+  "author": "liujing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orange727/layout/issues"
+  },
+  "homepage": "https://github.com/orange727/layout#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "postcss-loader": "^1.2.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1"
+  }
+}

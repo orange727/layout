@@ -1,0 +1,30 @@
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	.element {
+		box-sizing: border-box;
+	}
+	.element-fixed {
+		flex-shrink: 0;
+	}
+	.element-auto {
+		flex-grow: 1;
+	}
+}
+.flex-container-nowrap {
+	flex-wrap: nowrap;
+}
+
+.generate-y(6);
+.generate-y(@y, @i: 1) when (@i =< @y) {
+	.generate-x(@i);
+	.generate-y(@y, (@i + 1));
+}
+.generate-x(@x, @i: 1) when (@i =< @x) {
+	.element-@{i}-@{x} {
+		width: (@i * 100% / @x);
+	}
+	.generate-x(@x, (@i + 1));
+}
