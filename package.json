@@ -4,7 +4,8 @@
   "description": "A stylesheet for layout, using flex and padding, easy and compatible!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,11 @@
     "layout",
     "flex",
     "compatible"
+  ],
+  "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "iOS 7"
   ],
   "author": "liujing",
   "license": "ISC",
