@@ -1,0 +1,48 @@
+@import "layout.less";
+
+.flex-container {
+  background-color: #fff;
+}
+.content{
+   color: #fff;
+   background-color: #ccc;
+   min-height: 40px;
+}
+.example-1,
+.example-4,
+.example-5,
+.example-6 {
+  .layout(10px, 10px, 10px, 10px);
+}
+.example-2 {
+  .flex-container {
+    .element {
+      min-width: 200px;
+      display: flex;
+      justify-content: space-around;
+    }
+    .content {
+      width: 200px;
+    }
+  }
+}
+.example-3 {
+  .layout(2%, 2%, 2%, 2%)
+}
+.example-6 {
+  .element-fixed {
+    width: 100px;
+  }
+
+}
+.example-7 {
+  .layout(0, 0, 0, 0, container-1);
+  .layout(0, -1%, 20px, 10%, container-2);
+  .layout(0, 0, 1px, 1px, container-3);
+  .layout(10px, 10px, 0px, 10px, container-4);
+  .container-4 {
+    .element-fixed {
+      width: 100px;
+    }
+  }
+}

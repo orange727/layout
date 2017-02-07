@@ -1,10 +1,13 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: './index.js',
+    entry: {
+        layout: './index.js',
+        example: './example.js',
+    },
     output: {
         path: './dist',
-        filename: 'layout.js',
+        filename: '[name].js',
     },
     module: {
         loaders: [
@@ -18,6 +21,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('layout.css'),
+        new ExtractTextPlugin('[name].css'),
     ],
 };

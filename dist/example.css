@@ -1,0 +1,161 @@
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.flex-container .element {
+  box-sizing: border-box;
+}
+.flex-container .element-fixed {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.flex-container .element-auto {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.flex-container-nowrap {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.element-1-1 {
+  width: 100%;
+}
+.element-1-2 {
+  width: 50%;
+}
+.element-2-2 {
+  width: 100%;
+}
+.element-1-3 {
+  width: 33.33333333%;
+}
+.element-2-3 {
+  width: 66.66666667%;
+}
+.element-3-3 {
+  width: 100%;
+}
+.element-1-4 {
+  width: 25%;
+}
+.element-2-4 {
+  width: 50%;
+}
+.element-3-4 {
+  width: 75%;
+}
+.element-4-4 {
+  width: 100%;
+}
+.element-1-5 {
+  width: 20%;
+}
+.element-2-5 {
+  width: 40%;
+}
+.element-3-5 {
+  width: 60%;
+}
+.element-4-5 {
+  width: 80%;
+}
+.element-5-5 {
+  width: 100%;
+}
+.element-1-6 {
+  width: 16.66666667%;
+}
+.element-2-6 {
+  width: 33.33333333%;
+}
+.element-3-6 {
+  width: 50%;
+}
+.element-4-6 {
+  width: 66.66666667%;
+}
+.element-5-6 {
+  width: 83.33333333%;
+}
+.element-6-6 {
+  width: 100%;
+}
+.flex-container {
+  background-color: #fff;
+}
+.content {
+  color: #fff;
+  background-color: #ccc;
+  min-height: 40px;
+}
+.example-1 .flex-container,
+.example-4 .flex-container,
+.example-5 .flex-container,
+.example-6 .flex-container {
+  padding: 10px 10px;
+}
+.example-1 .flex-container .element,
+.example-4 .flex-container .element,
+.example-5 .flex-container .element,
+.example-6 .flex-container .element {
+  padding: 5px 5px;
+}
+.example-2 .flex-container .element {
+  min-width: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.example-2 .flex-container .content {
+  width: 200px;
+}
+.example-3 .flex-container {
+  padding: 2% 2%;
+}
+.example-3 .flex-container .element {
+  padding: 1% 1%;
+}
+.example-6 .element-fixed {
+  width: 100px;
+}
+.example-7 .container-1 {
+  padding: 0 0;
+}
+.example-7 .container-1 .element {
+  padding: 0 0;
+}
+.example-7 .container-2 {
+  padding: 0 -1%;
+}
+.example-7 .container-2 .element {
+  padding: 10px 5%;
+}
+.example-7 .container-3 {
+  padding: 0 0;
+}
+.example-7 .container-3 .element {
+  padding: 0.5px 0.5px;
+}
+.example-7 .container-4 {
+  padding: 10px 10px;
+}
+.example-7 .container-4 .element {
+  padding: 0px 5px;
+}
+.example-7 .container-4 .element-fixed {
+  width: 100px;
+}
