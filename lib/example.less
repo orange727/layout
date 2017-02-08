@@ -1,19 +1,32 @@
 @import "layout.less";
 
+body {
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #577C8A !important;
+}
+.gloss {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('http://nipponcolors.com/images/texture.png');
+}
 .flex-container {
-  background-color: #fff;
+    background-color: #2E5C6E;
 }
 .content{
-   color: #fff;
-   background-color: #ccc;
-   min-height: 40px;
+    color: #577C8A;
+    background-color: #FFFFFF;
+    min-height: 46px;
+    padding: 4px;
 }
-.example-1,
-.example-4,
-.example-5,
-.example-6 {
-  .layout(10px, 10px, 10px, 10px);
-}
+
+.layout(20px, 0, 20px, 0, body-container);
+.layout(10px, 10px, 10px, 10px);
+
 .example-2 {
   .flex-container {
     .element {
@@ -26,8 +39,16 @@
     }
   }
 }
+
 .example-3 {
   .layout(2%, 2%, 2%, 2%)
+}
+
+.example-4 {
+  .layout(10px, 0px, 20px, 20px);
+  .element-1-1 {
+    padding: 0 !important;
+  }
 }
 .example-6 {
   .element-fixed {
@@ -36,10 +57,16 @@
 
 }
 .example-7 {
+  .b .content {
+    height: 30px !important;
+    min-height: initial;
+  }
+}
+.example-10 {
   .layout(0, 0, 0, 0, container-1);
   .layout(0, -1%, 20px, 10%, container-2);
-  .layout(0, 0, 1px, 1px, container-3);
-  .layout(10px, 10px, 0px, 10px, container-4);
+  .layout(0, 10px, 1px, 1px, container-3);
+  .layout(10px, 5px, 0px, 10px, container-4);
   .container-4 {
     .element-fixed {
       width: 100px;

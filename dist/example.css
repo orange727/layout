@@ -8,6 +8,35 @@
           flex-wrap: wrap;
   box-sizing: border-box;
 }
+.flex-container.center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flex-container.right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.flex-container.middle {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-container.bottom {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.flex-container.nowrap {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
 .flex-container .element {
   box-sizing: border-box;
 }
@@ -21,11 +50,6 @@
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-.flex-container-nowrap {
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
 }
 .element-1-1 {
   width: 100%;
@@ -90,24 +114,39 @@
 .element-6-6 {
   width: 100%;
 }
+body {
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+  background-color: #577C8A !important;
+}
+.gloss {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('http://nipponcolors.com/images/texture.png');
+}
 .flex-container {
-  background-color: #fff;
+  background-color: #2E5C6E;
 }
 .content {
-  color: #fff;
-  background-color: #ccc;
-  min-height: 40px;
+  color: #577C8A;
+  background-color: #FFFFFF;
+  min-height: 46px;
+  padding: 4px;
 }
-.example-1 .flex-container,
-.example-4 .flex-container,
-.example-5 .flex-container,
-.example-6 .flex-container {
+.body-container {
+  padding: 20px 0;
+}
+.body-container .element {
+  padding: 10px 0;
+}
+.flex-container {
   padding: 10px 10px;
 }
-.example-1 .flex-container .element,
-.example-4 .flex-container .element,
-.example-5 .flex-container .element,
-.example-6 .flex-container .element {
+.flex-container .element {
   padding: 5px 5px;
 }
 .example-2 .flex-container .element {
@@ -129,33 +168,46 @@
 .example-3 .flex-container .element {
   padding: 1% 1%;
 }
+.example-4 .flex-container {
+  padding: 10px 0px;
+}
+.example-4 .flex-container .element {
+  padding: 10px 10px;
+}
+.example-4 .element-1-1 {
+  padding: 0 !important;
+}
 .example-6 .element-fixed {
   width: 100px;
 }
-.example-7 .container-1 {
+.example-7 .b .content {
+  height: 30px !important;
+  min-height: initial;
+}
+.example-10 .container-1 {
   padding: 0 0;
 }
-.example-7 .container-1 .element {
+.example-10 .container-1 .element {
   padding: 0 0;
 }
-.example-7 .container-2 {
+.example-10 .container-2 {
   padding: 0 -1%;
 }
-.example-7 .container-2 .element {
+.example-10 .container-2 .element {
   padding: 10px 5%;
 }
-.example-7 .container-3 {
-  padding: 0 0;
+.example-10 .container-3 {
+  padding: 0 10px;
 }
-.example-7 .container-3 .element {
+.example-10 .container-3 .element {
   padding: 0.5px 0.5px;
 }
-.example-7 .container-4 {
-  padding: 10px 10px;
+.example-10 .container-4 {
+  padding: 10px 5px;
 }
-.example-7 .container-4 .element {
+.example-10 .container-4 .element {
   padding: 0px 5px;
 }
-.example-7 .container-4 .element-fixed {
+.example-10 .container-4 .element-fixed {
   width: 100px;
 }
