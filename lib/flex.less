@@ -1,41 +1,41 @@
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  &.center {
-     justify-content: center;
-  }
-  &.right {
-    justify-content: flex-end;
-  }
-  &.middle {
-     align-items: center;
-  }
-  &.bottom {
-     align-items: flex-end;
-  }
-  &.nowrap {
-    flex-wrap: nowrap;
-  }
-  .element {
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
-  }
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
+    &.center {
+        justify-content: center;
+    }
+    &.right {
+        justify-content: flex-end;
+    }
+    &.middle {
+        align-items: center;
+    }
+    &.bottom {
+        align-items: flex-end;
+    }
+}
 
-  .element-fixed {
-    flex-shrink: 0;
-  }
-  .element-auto {
-    flex-grow: 1;
-  }
+.flex-item {
+    box-sizing: border-box;
+    &.fixed {
+        flex-shrink: 0;
+    }
+    &.auto {
+        flex-grow: 1;
+    }
 }
 
 .generate-y(6);
 .generate-y(@y, @i: 1) when (@i =< @y) {
-	.generate-x(@i);
-	.generate-y(@y, (@i + 1));
+    .generate-x(@i);
+    .generate-y(@y, (@i + 1));
 }
 .generate-x(@x, @i: 1) when (@i =< @x) {
-	.element-@{i}-@{x} {
+	.flex-item-@{i}-@{x} {
 		width: (@i * 100% / @x);
 	}
 	.generate-x(@x, (@i + 1));

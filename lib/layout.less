@@ -1,9 +1,9 @@
 @import "flex.less";
 
-.layout(@padding-outer-y; @padding-outer-x; @padding-y; @padding-x; @container: flex-container) {
+.layout(@padding-outer-y; @padding-outer-x; @padding-y; @padding-x; @container: flex-box) {
 	.@{container} {
 		padding: @padding-outer-y @padding-outer-x;
-		.element {
+		.flex-item {
 			padding: (@padding-y / 2) (@padding-x / 2);
 		}
 	}

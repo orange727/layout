@@ -1,9 +1,10 @@
-@import "layout.less";
+@import "../lib/layout.less";
 
 body {
     color: #fff;
     width: 60%;
     margin: 0 auto;
+    background: url('http://nipponcolors.com/images/texture.png');
     background-color: #577C8A !important;
 }
 .gloss {
@@ -12,9 +13,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url('http://nipponcolors.com/images/texture.png');
 }
-.flex-container {
+.flex-box {
     background-color: #2E5C6E;
 }
 .content{
@@ -28,8 +28,8 @@ body {
 .layout(10px, 10px, 10px, 10px);
 
 .example-2 {
-  .flex-container {
-    .element {
+  .flex-box {
+    .flex-item {
       min-width: 200px;
       display: flex;
       justify-content: space-around;
@@ -46,12 +46,12 @@ body {
 
 .example-4 {
   .layout(10px, 0px, 20px, 20px);
-  .element-1-1 {
+  .flex-item-1-1 {
     padding: 0 !important;
   }
 }
 .example-6 {
-  .element-fixed {
+  .fixed {
     width: 100px;
   }
 
@@ -68,7 +68,7 @@ body {
   .layout(0, 10px, 1px, 1px, container-3);
   .layout(10px, 5px, 0px, 10px, container-4);
   .container-4 {
-    .element-fixed {
+    .fixed {
       width: 100px;
     }
   }

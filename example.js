@@ -1,1 +1,0 @@
-import './lib/example.less';

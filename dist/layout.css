@@ -1,4 +1,4 @@
-.flex-container {
+.flex-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8,109 +8,109 @@
           flex-wrap: wrap;
   box-sizing: border-box;
 }
-.flex-container.center {
+.flex-box.nowrap {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.flex-box.center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.flex-container.right {
+.flex-box.right {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.flex-container.middle {
+.flex-box.middle {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.flex-container.bottom {
+.flex-box.bottom {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.flex-container.nowrap {
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-}
-.flex-container .element {
+.flex-item {
   box-sizing: border-box;
 }
-.flex-container .element-fixed {
+.flex-item.fixed {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
 }
-.flex-container .element-auto {
+.flex-item.auto {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.element-1-1 {
+.flex-item-1-1 {
   width: 100%;
 }
-.element-1-2 {
+.flex-item-1-2 {
   width: 50%;
 }
-.element-2-2 {
+.flex-item-2-2 {
   width: 100%;
 }
-.element-1-3 {
+.flex-item-1-3 {
   width: 33.33333333%;
 }
-.element-2-3 {
+.flex-item-2-3 {
   width: 66.66666667%;
 }
-.element-3-3 {
+.flex-item-3-3 {
   width: 100%;
 }
-.element-1-4 {
+.flex-item-1-4 {
   width: 25%;
 }
-.element-2-4 {
+.flex-item-2-4 {
   width: 50%;
 }
-.element-3-4 {
+.flex-item-3-4 {
   width: 75%;
 }
-.element-4-4 {
+.flex-item-4-4 {
   width: 100%;
 }
-.element-1-5 {
+.flex-item-1-5 {
   width: 20%;
 }
-.element-2-5 {
+.flex-item-2-5 {
   width: 40%;
 }
-.element-3-5 {
+.flex-item-3-5 {
   width: 60%;
 }
-.element-4-5 {
+.flex-item-4-5 {
   width: 80%;
 }
-.element-5-5 {
+.flex-item-5-5 {
   width: 100%;
 }
-.element-1-6 {
+.flex-item-1-6 {
   width: 16.66666667%;
 }
-.element-2-6 {
+.flex-item-2-6 {
   width: 33.33333333%;
 }
-.element-3-6 {
+.flex-item-3-6 {
   width: 50%;
 }
-.element-4-6 {
+.flex-item-4-6 {
   width: 66.66666667%;
 }
-.element-5-6 {
+.flex-item-5-6 {
   width: 83.33333333%;
 }
-.element-6-6 {
+.flex-item-6-6 {
   width: 100%;
 }
