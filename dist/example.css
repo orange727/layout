@@ -138,15 +138,23 @@ body {
   padding: 4px;
 }
 .body-container {
-  padding: 20px 0;
-}
-.body-container .flex-item {
   padding: 10px 0;
 }
-.flex-box {
-  padding: 10px 10px;
+.body-container > .flex-item {
+  padding: 10px 0;
 }
-.flex-box .flex-item {
+.example-1 .flex-box,
+.example-2 .flex-box,
+.example-5 .flex-box,
+.example-6 .flex-box,
+.example-7 .flex-box {
+  padding: 5px 5px;
+}
+.example-1 .flex-box > .flex-item,
+.example-2 .flex-box > .flex-item,
+.example-5 .flex-box > .flex-item,
+.example-6 .flex-box > .flex-item,
+.example-7 .flex-box > .flex-item {
   padding: 5px 5px;
 }
 .example-2 .flex-box .flex-item {
@@ -163,15 +171,15 @@ body {
   width: 200px;
 }
 .example-3 .flex-box {
-  padding: 2% 2%;
+  padding: 1% 1%;
 }
-.example-3 .flex-box .flex-item {
+.example-3 .flex-box > .flex-item {
   padding: 1% 1%;
 }
 .example-4 .flex-box {
-  padding: 10px 0px;
+  padding: 0px -10px;
 }
-.example-4 .flex-box .flex-item {
+.example-4 .flex-box > .flex-item {
   padding: 10px 10px;
 }
 .example-4 .flex-item-1-1 {
@@ -187,25 +195,31 @@ body {
 .example-10 .container-1 {
   padding: 0 0;
 }
-.example-10 .container-1 .flex-item {
+.example-10 .container-1 > .flex-item {
   padding: 0 0;
 }
 .example-10 .container-2 {
-  padding: 0 -1%;
+  padding: -10px -6%;
 }
-.example-10 .container-2 .flex-item {
+.example-10 .container-2 > .flex-item {
   padding: 10px 5%;
 }
 .example-10 .container-3 {
-  padding: 0 10px;
+  padding: -0.5px 9.5px;
 }
-.example-10 .container-3 .flex-item {
+.example-10 .container-3 > .flex-item {
   padding: 0.5px 0.5px;
 }
 .example-10 .container-4 {
-  padding: 10px 5px;
+  padding: 5px 5px;
 }
-.example-10 .container-4 .flex-item {
+.example-10 .container-4 > .flex-item {
+  padding: 5px 0px;
+}
+.example-10 .flex-item-1-1 {
+  padding: 0px -5px;
+}
+.example-10 .flex-item-1-1 > .flex-item {
   padding: 0px 5px;
 }
 .example-10 .container-4 .fixed {

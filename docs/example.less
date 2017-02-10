@@ -25,7 +25,14 @@ body {
 }
 
 .layout(20px, 0, 20px, 0, body-container);
-.layout(10px, 10px, 10px, 10px);
+
+.example-1,
+.example-2,
+.example-5,
+.example-6,
+.example-7 {
+    .layout(10px, 10px, 10px, 10px);
+}
 
 .example-2 {
   .flex-box {
@@ -50,12 +57,13 @@ body {
     padding: 0 !important;
   }
 }
+
 .example-6 {
   .fixed {
     width: 100px;
   }
-
 }
+
 .example-7 {
   .b .content {
     height: 30px !important;
@@ -66,7 +74,8 @@ body {
   .layout(0, 0, 0, 0, container-1);
   .layout(0, -1%, 20px, 10%, container-2);
   .layout(0, 10px, 1px, 1px, container-3);
-  .layout(10px, 5px, 0px, 10px, container-4);
+  .layout(10px, 5px, 10px, 0px, container-4);
+  .layout(0px, 0px, 0px, 10px, flex-item-1-1);
   .container-4 {
     .fixed {
       width: 100px;
