@@ -7,10 +7,10 @@
 
 因此，我们总结了常见的布局场景，借用了[Lego]()模块化设计的思路，实现了一个 生成布局的 less方法，并且生成了一些 布局类。使用这些类名和方法，就能实现简单的布局，这里有一些实例：[Demo](http://orange727.github.io/docs/index.html)
 
-
-![布局前](/docs/layout-before.png?raw=true)
-
-![布局后](/docs/layout-after.png?raw=true)
+![布局前](/docs/layout-before.jpg?raw=true)
+(引用自：https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)
+![布局后](/docs/layout-after.jpg?raw=true)
+(引用自：https://alistapart.com/article/learning-from-lego-a-step-forward-in-modular-web-design)
 
 ### Usage
 
